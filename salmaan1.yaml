@@ -1,0 +1,10 @@
+---
+- name: Restarting SSH 
+  hosts: moiz
+  gather_facts: no
+
+  tasks:
+    - name: restart ssh
+      service:
+        name: ssh
+        state: restarted 
